@@ -1,0 +1,29 @@
+{
+  "name": "kintisoft/sdk",
+  "description": "Official PHP SDK for KintiSoft Public API",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "KintiSoft\\SDK\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=8.0",
+    "guzzlehttp/guzzle": "^7.0"
+  },
+  "require-dev": {},
+  "authors": [
+    {
+      "name": "KintiSoft",
+      "email": "soporte@kintisoft.com"
+    }
+  ],
+  "keywords": [
+    "kintisoft",
+    "sdk",
+    "api",
+    "multitenant",
+    "php"
+  ]
+}
