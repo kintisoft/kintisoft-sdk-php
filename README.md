@@ -1,28 +1,23 @@
 # kintisoft/sdk (PHP)
-### SDK oficial de PHP para la API pública de KintiSoft
+### Official PHP SDK for the KintiSoft Public API
 
-El **SDK oficial de KintiSoft para PHP** facilita la integración de la API pública en aplicaciones PHP, servidores externos.
+The official KintiSoft PHP SDK makes it easy to integrate the public API into PHP applications and external servers.
 
-Incluye:
+Includes:
 
-- Cliente HTTP basado en Guzzle  
-- Excepciones personalizadas  
-- Soporte multi-tenant  
+- HTTP client based on Guzzle
+- Custom exceptions
+- Multi-tenant support
 
 ---
 
-## Instalación
+## Installation
 
-```bash
 composer require kintisoft/sdk
-```
 
 ---
 
-## Configuración básica
-
-```php
-<?php
+## Basic configuration
 
 require __DIR__ . '/vendor/autoload.php';
 
@@ -32,35 +27,31 @@ $client = new Client(
     tenant: 'acme',
     apiKey: 'pk_live_xxxxxx',
 );
-```
+
 ---
 
-## Opciones avanzadas
+## Advanced options
 
-```php
 $client = new Client(
     tenant: 'acme',
     apiKey: 'pk_live_xxxxxx',
     baseUrlOverride: 'https://acme.kintisoft.com/api/v1',
     timeout: 15.0,
 );
-```
 
 ---
 
-## Estructura interna
+## Internal structure
 
-```
 src/
   Client.php
   HttpClient.php
   Prospects.php
   Exceptions/
     KintiSoftException.php
-```
 
 ---
 
-##  Licencia
+## License
 
 MIT License

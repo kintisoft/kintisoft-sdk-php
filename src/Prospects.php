@@ -24,7 +24,4 @@ class Prospects
         return $this->http->request('POST', '/persons/prospects', $payload);
     }
 
-    // Futuro:
-    // public function list(array $filters = []): array { ... }
-    // public function get(string $id): array { ... }
 }

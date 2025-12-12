@@ -1,0 +1,46 @@
+# ======================
+# Composer
+# ======================
+/vendor/
+composer.lock
+
+# ======================
+# PHP
+# ======================
+*.log
+*.cache
+*.phpunit.result.cache
+
+# ======================
+# PHPUnit
+# ======================
+/coverage/
+phpunit.xml
+phpunit.xml.dist
+
+# ======================
+# IDEs / Editors
+# ======================
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# ======================
+# OS files
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# Temporary files
+# ======================
+*.tmp
+*.swp
+*.bak
+
+# ======================
+# Build / artifacts
+# ======================
+/build/
+/dist/
